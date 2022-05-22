@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <title>Cadastro - Transfácil</title>
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+    
+<div class="container">
+  <main>
+    <div class="py-5 text-center">
+      <img class="d-block mx-auto mb-4" src="login.png" alt="" width="72" height="57">
+      <h2>Cadastre-se</h2>
+    </div>
+    
+    </h2>
+    <div class="row g-5">
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Dados pessoais</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Sobrenome</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+            </div>
+
+            <div class="col-12">
+              <label for="username" class="form-label">Login</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text">@</span>
+                <input type="text" class="form-control" id="username" placeholder="gerente123" required>
+              <div class="invalid-feedback">
+                  Login já está em uso, cadastre outro.
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email </label>
+              <input type="email" class="form-control" id="email" placeholder="teste@exemplo.com">
+              <div class="invalid-feedback">
+                E-mail já está em uso, cadastre outro.
+              </div>
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Senha</label>
+              <input type="text" class="form-control" id="password" placeholder="Insira sua senha" required>
+            
+            </div>
+
+            <div class="col-12">
+              <label for="address2" class="form-label">Confirme sua senha </label>
+              <input type="text" class="form-control" id="password2" placeholder="Insira sua senha novamente">
+            </div>
+
+            <div class="col-md-4">
+                <label for="state" class="form-label">Dia</label>
+                <input type="text" class="form-control" id="day" placeholder="Ex.: 09" required>
+              </div>
+
+            <div class="col-md-5">
+              <label for="date" class="form-label">Data de nascimento</label>
+              <select class="form-select" id="date" required>
+                <option value="">Selecione o mês</option>
+                <option>Janeiro</option>
+                <option>Fevereiro</option>
+                <option>Março</option>
+                <option>Abril</option>
+                <option>Maio</option>
+                <option>Junho</option>
+                <option>Julho</option>
+                <option>Agosto</option>
+                <option>Setembro</option>
+                <option>Outubro</option>
+                <option>Novembro</option>
+                <option>Dezembro</option>
+              </select>
+            
+            </div>
+
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Ano de nascimento</label>
+              <input type="text" class="form-control" id="year" placeholder="Ex.: 1998" required>
+            </div>
+          </div>
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1">
+            <label class="form-check-label" for="chec1">Confirmo todas as informações acima</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Permitir uso de minhas informações para pesquisas e melhorias</label>
+          </div>
+
+          <hr class="my-4">
+
+          
+          <button class="w-100 btn btn-primary btn-lg" type="submit"></a>Criar conta</button>           
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; Direitos reservados para Lucas Oliveira, 2022</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacidade</a></li>
+      <li class="list-inline-item"><a href="#">Termos</a></li>
+      <li class="list-inline-item"><a href="#">Suporte</a></li>
+    </ul>
+  </footer>
+</div>
+
+
+    <script src="/docs/5.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+      <script src="form-validation.js"></script>
+  </body>
+</html>
