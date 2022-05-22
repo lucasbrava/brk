@@ -1,5 +1,4 @@
-Desafio BRK 
-Lucas Oliveira 
+Desafio BRK (Lucas Oliveira)
 
 
 Estória do usuário:
